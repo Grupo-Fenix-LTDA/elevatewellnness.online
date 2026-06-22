@@ -1,0 +1,379 @@
+<!-- 6f6f716f9a9451e4 -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Esplanada Móveis | Móveis para sua Casa em Jundiaí e Interior de SP · Elevatewellnness</title>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+--bg:#f8f6f3;
+--card:#ffffff;
+--primary:#b5651d;
+--primary-dark:#8c4e17;
+--accent:#2c5f2d;
+--text:#1e1e1e;
+--text-light:#555;
+--border:#e6e1da;
+--radius:8px;
+}
+html{scroll-behavior:smooth}
+body{font-family:'Segoe UI',Roboto,Arial,sans-serif;color:var(--text);background:var(--bg);line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:var(--primary);text-decoration:none}
+a:hover{color:var(--primary-dark)}
+
+/* NAV */
+.oas3_nav{background:var(--card);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100}
+.oas3_nav-inner{max-width:1100px;margin:0 auto;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px}
+.oas3_nav-brand{font-size:1.3rem;font-weight:800;color:var(--primary-dark);letter-spacing:-.3px}
+.oas3_nav-brand span{color:var(--accent)}
+.oas3_nav-links{display:flex;gap:22px;flex-wrap:wrap}
+.oas3_nav-links a{font-size:.9rem;color:var(--text-light);font-weight:500;transition:color .2s}
+.oas3_nav-links a:hover{color:var(--primary)}
+
+/* HERO */
+.oas3_hero{background:linear-gradient(135deg,#b5651d 0%,#8c4e17 100%);color:#fff;padding:72px 20px 62px;text-align:center}
+.oas3_hero h1{font-size:2.1rem;font-weight:700;margin-bottom:14px;line-height:1.25}
+.oas3_hero p{font-size:1.05rem;max-width:640px;margin:0 auto 28px;opacity:.92}
+.oas3_hero-cta{display:inline-block;background:var(--accent);color:#fff;font-weight:700;padding:14px 36px;border-radius:var(--radius);font-size:1rem;transition:background .2s}
+.oas3_hero-cta:hover{background:#1e4620;color:#fff}
+
+/* SECTION */
+.oas3_section{max-width:1100px;margin:0 auto;padding:60px 20px}
+.oas3_section-title{font-size:1.5rem;font-weight:700;margin-bottom:8px;color:var(--primary-dark)}
+.oas3_section-sub{color:var(--text-light);margin-bottom:36px;max-width:620px}
+
+/* CARDS */
+.oas3_cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px}
+.oas3_card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:28px 24px;transition:box-shadow .2s}
+.oas3_card:hover{box-shadow:0 4px 16px rgba(0,0,0,.06)}
+.oas3_card-icon{font-size:2rem;margin-bottom:14px}
+.oas3_card h3{font-size:1.05rem;font-weight:600;margin-bottom:8px}
+.oas3_card p{font-size:.92rem;color:var(--text-light)}
+
+/* STEPS */
+.oas3_steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:24px;counter-reset:step}
+.oas3_step{text-align:center;padding:20px}
+.oas3_step::before{counter-increment:step;content:counter(step);display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:50%;background:var(--primary);color:#fff;font-weight:700;font-size:1.1rem;margin-bottom:14px}
+.oas3_step h3{font-size:1rem;font-weight:600;margin-bottom:6px}
+.oas3_step p{font-size:.9rem;color:var(--text-light)}
+
+/* INFO BAR */
+.oas3_info-bar{background:var(--primary);color:#fff;text-align:center;padding:28px 20px}
+.oas3_info-bar p{max-width:700px;margin:0 auto;font-size:1rem}
+
+/* ABOUT */
+.oas3_about-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.oas3_about-text h2{font-size:1.5rem;font-weight:700;color:var(--primary-dark);margin-bottom:12px}
+.oas3_about-text p{color:var(--text-light);margin-bottom:14px;font-size:.95rem}
+.oas3_about-img{background:var(--border);border-radius:var(--radius);height:280px;display:flex;align-items:center;justify-content:center;color:var(--text-light);font-size:.85rem}
+
+/* CONTACT */
+.oas3_contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.oas3_contact-info h3{font-size:1.15rem;font-weight:600;margin-bottom:16px;color:var(--primary-dark)}
+.oas3_contact-item{display:flex;gap:12px;margin-bottom:16px;align-items:flex-start}
+.oas3_contact-item .oas3_ci-icon{font-size:1.2rem;flex-shrink:0;margin-top:2px}
+.oas3_contact-item .oas3_ci-text{font-size:.92rem;color:var(--text-light)}
+.oas3_contact-item .oas3_ci-text strong{color:var(--text);font-weight:600}
+.oas3_contact-form label{display:block;font-size:.85rem;font-weight:600;margin-bottom:4px;color:var(--text)}
+.oas3_contact-form input,.oas3_contact-form textarea{width:100%;padding:10px 14px;border:1px solid var(--border);border-radius:var(--radius);font-size:.92rem;margin-bottom:14px;font-family:inherit;background:var(--card)}
+.oas3_contact-form textarea{resize:vertical;min-height:100px}
+.oas3_contact-form button{background:var(--primary);color:#fff;font-weight:700;padding:12px 32px;border:none;border-radius:var(--radius);cursor:pointer;font-size:.95rem;transition:background .2s}
+.oas3_contact-form button:hover{background:var(--primary-dark)}
+
+/* FOOTER */
+.oas3_footer{background:#1a1a1a;color:#ccc;padding:40px 20px 20px;font-size:.85rem}
+.oas3_footer-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr 1fr;gap:30px}
+.oas3_footer h4{color:#fff;font-size:.95rem;margin-bottom:12px}
+.oas3_footer p,.oas3_footer a{color:#aaa;font-size:.84rem;line-height:1.7}
+.oas3_footer a:hover{color:#fff}
+.footer-bottom{max-width:1100px;margin:24px auto 0;padding-top:16px;border-top:1px solid #333;text-align:center;font-size:.8rem;color:#777}
+
+/* MODAL */
+.modal-overlay{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.6);z-index:200;justify-content:center;align-items:center}
+.modal-overlay.active{display:flex}
+.oas3_modal{background:#fff;max-width:700px;width:95%;max-height:85vh;overflow-y:auto;border-radius:var(--radius);padding:36px 30px}
+.oas3_modal h2{font-size:1.3rem;margin-bottom:16px;color:var(--primary-dark)}
+.oas3_modal p{font-size:.9rem;color:var(--text-light);margin-bottom:10px;line-height:1.6}
+.oas3_modal-close{display:inline-block;margin-top:16px;background:var(--primary);color:#fff;padding:8px 24px;border:none;border-radius:var(--radius);cursor:pointer;font-size:.9rem}
+
+@media(max-width:768px){
+  .oas3_hero h1{font-size:1.6rem}
+  .oas3_about-grid,.oas3_contact-grid,.oas3_footer-inner{grid-template-columns:1fr}
+  .oas3_nav-links{gap:14px}
+}
+</style>
+
+<link rel="canonical" href="https://elevatewellnness.online/">
+<meta name="description" content="Página exclusiva de elevatewellnness.online com informações completas. Conteúdo atualizado e verificado para você.">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://elevatewellnness.online/">
+<meta property="og:site_name" content="elevatewellnness.online">
+<meta property="og:description" content="Página exclusiva de elevatewellnness.online com informações completas. Conteúdo atualizado e verificado para você.">
+<meta property="og:locale" content="pt_BR">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:domain" content="elevatewellnness.online">
+<meta name="generator" content="cms-26fd6af04e42">
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Elevatewellnness","url":"https://elevatewellnness.online/","datePublished":"2024-02-04","dateModified":"2025-11-05","inLanguage":"pt-BR","isPartOf":{"@type":"WebSite","name":"Elevatewellnness","url":"https://elevatewellnness.online/"},"publisher":{"@type":"Organization","name":"Elevatewellnness","url":"https://elevatewellnness.online/"}}</script>
+
+<style>:root{--rmdk-p:rgb(167,130,4);--rmdk-s:rgb(233,13,212);--rmdk-id:'ae8677938d5d'}@keyframes jwjdcljt{from{opacity:1}to{opacity:1}}.rcdllm{position:absolute;width:0;height:0;overflow:hidden;pointer-events:none}</style>
+<!-- b:cg92k93djc v5.25.62 -->
+</head>
+<body data-s="ecee06ae" data-p="yws1a0">
+<noscript><div style="padding:16px;text-align:center;font-size:13px;"><p>Ative o JavaScript para acessar todo o conteúdo de elevatewellnness.</p></div></noscript>
+
+<!-- NAV -->
+<nav class="oas3_nav">
+<div class="oas3_nav-inner">
+  <div class="oas3_nav-brand">Esplanada <span>Móveis</span></div>
+  <div class="oas3_nav-links">
+    <a href="#produtos">Produtos</a>
+    <a href="#como-funciona">Como Comprar</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#contato">Contato</a>
+  </div>
+</div>
+</nav>
+
+<!-- HERO -->
+<section class="oas3_hero">
+<h1>Móveis de Qualidade para<br>o Seu Lar em Jundiaí e Região</h1>
+<p>Dormitórios, sofás, mesas, racks, estantes, colchões e eletrodomésticos. Lojas físicas no interior de São Paulo e entrega para todo o estado.</p>
+<a href="#contato" class="oas3_hero-cta">Fale Conosco</a>
+</section>
+
+<!-- PRODUTOS -->
+<section class="oas3_section" id="produtos">
+<h2 class="oas3_section-title">Nossos Produtos</h2>
+<p class="oas3_section-sub">Linha completa de móveis e eletrodomésticos para todos os ambientes da sua casa.</p>
+<div class="oas3_cards">
+  <div class="oas3_card">
+    <div class="oas3_card-icon">🛏️</div>
+    <h3>Dormitórios</h3>
+    <p>Guarda-roupas, camas, colchões, cômodas, cabeceiras e criados-mudo. Linhas adulto e infantil em diversos tamanhos e acabamentos.</p>
+  </div>
+  <div class="oas3_card">
+    <div class="oas3_card-icon">🛋️</div>
+    <h3>Sala de Estar</h3>
+    <p>Sofás retráteis e reclináveis, poltronas, racks, painéis para TV, estantes e home theaters para criar o ambiente perfeito.</p>
+  </div>
+  <div class="oas3_card">
+    <div class="oas3_card-icon">🍽️</div>
+    <h3>Sala de Jantar</h3>
+    <p>Conjuntos de mesas e cadeiras, banquetas, buffets e aparadores. Opções para todos os estilos e tamanhos de ambiente.</p>
+  </div>
+  <div class="oas3_card">
+    <div class="oas3_card-icon">🍳</div>
+    <h3>Cozinha e Área de Serviço</h3>
+    <p>Armários de cozinha, cozinhas compactas, armários multiuso, estantes e organizadores para otimizar seus espaços.</p>
+  </div>
+  <div class="oas3_card">
+    <div class="oas3_card-icon">💻</div>
+    <h3>Home Office</h3>
+    <p>Escrivaninhas, estações de trabalho, cadeiras de escritório e estantes para montar seu espaço de trabalho em casa.</p>
+  </div>
+  <div class="oas3_card">
+    <div class="oas3_card-icon">📺</div>
+    <h3>Eletrodomésticos</h3>
+    <p>Equipamentos de áudio, vídeo, telefonia e eletrodomésticos das principais marcas do mercado.</p>
+  </div>
+</div>
+</section>
+
+<!-- INFO BAR -->
+<div class="oas3_info-bar">
+<p>Lojas físicas no interior de São Paulo. Atendimento de segunda a sexta das 9h às 18h, sábado das 9h às 14h. Entrega para todo o estado.</p>
+</div>
+
+<!-- COMO COMPRAR -->
+<section class="oas3_section" id="como-funciona">
+<h2 class="oas3_section-title">Como Comprar</h2>
+<p class="oas3_section-sub">Compre na loja física ou pelo nosso site com entrega em todo o estado de São Paulo.</p>
+<div class="oas3_steps">
+  <div class="oas3_step">
+    <h3>Escolha seus Móveis</h3>
+    <p>Visite uma de nossas lojas físicas ou navegue pelo nosso catálogo online. Nossa equipe está à disposição para orientar sua escolha.</p>
+  </div>
+  <div class="oas3_step">
+    <h3>Pagamento Facilitado</h3>
+    <p>Pague no PIX com desconto, cartão de crédito em até 10x sem juros ou boleto bancário. Condições especiais na loja.</p>
+  </div>
+  <div class="oas3_step">
+    <h3>Receba em Casa</h3>
+    <p>Entregamos em todo o estado de São Paulo. Prazo de entrega informado na confirmação do pedido, com rastreamento disponível.</p>
+  </div>
+</div>
+</section>
+
+<!-- SOBRE -->
+<section class="oas3_section" id="sobre">
+<div class="oas3_about-grid">
+  <div class="oas3_about-text">
+    <h2>Sobre a Esplanada Móveis</h2>
+    <p>Somos uma rede varejista de móveis e eletrodomésticos com sede em Jundiaí, SP, atuando no mercado desde 2007. Contamos com lojas físicas espalhadas pelo interior do estado de São Paulo, oferecendo móveis de qualidade a preços acessíveis.</p>
+    <p>Nosso catálogo inclui dormitórios, salas de estar e jantar, cozinhas, home offices, colchões e eletrodomésticos das principais marcas. Trabalhamos com entrega própria para todo o estado de São Paulo.</p>
+    <p>Priorizamos o atendimento personalizado, condições de pagamento facilitadas e agilidade na entrega. Nosso compromisso é ajudar nossos clientes a conquistar os melhores ambientes para suas casas com economia e qualidade.</p>
+  </div>
+  <div class="oas3_about-img">Imagem da loja</div>
+</div>
+</section>
+
+<!-- CONTATO -->
+<section class="oas3_section" id="contato">
+<h2 class="oas3_section-title">Contato</h2>
+<p class="oas3_section-sub">Tire suas dúvidas, solicite orçamento ou acompanhe seu pedido.</p>
+<div class="oas3_contact-grid">
+  <div class="oas3_contact-info">
+    <h3>Nossos Canais</h3>
+    <div class="oas3_contact-item">
+      <span class="oas3_ci-icon">📞</span>
+      <div class="oas3_ci-text"><strong>Telefone</strong><br>(11) 4588-6893</div>
+    </div>
+    <div class="oas3_contact-item">
+      <span class="oas3_ci-icon">📧</span>
+      <div class="oas3_ci-text"><strong>E-mail</strong><br>quinterojovis97@gmail.com</div>
+    </div>
+    <div class="oas3_contact-item">
+      <span class="oas3_ci-icon">📍</span>
+      <div class="oas3_ci-text"><strong>Sede / Centro de Distribuição</strong><br>Av. Geraldo Azzoni, 35<br>Rio Acima — Jundiaí, SP<br>CEP 13.215-840</div>
+    </div>
+    <div class="oas3_contact-item">
+      <span class="oas3_ci-icon">🕐</span>
+      <div class="oas3_ci-text"><strong>Horário</strong><br>Segunda a Sexta: 9h às 18h<br>Sábado: 9h às 14h</div>
+    </div>
+  </div>
+  <div class="oas3_contact-form">
+    <h3 style="font-size:1.15rem;font-weight:600;margin-bottom:16px;color:var(--primary-dark)">Envie uma Mensagem</h3>
+    <label for="cf-name">Nome</label>
+    <input type="text" id="cf-name" placeholder="Seu nome completo">
+    <label for="cf-email">E-mail</label>
+    <input type="email" id="cf-email" placeholder="seu@email.com">
+    <label for="cf-msg">Mensagem</label>
+    <textarea id="cf-msg" placeholder="Descreva sua dúvida, pedido ou solicitação"></textarea>
+    <button type="button" onclick="alert('Mensagem enviada com sucesso! Retornaremos em breve.')">Enviar</button>
+  </div>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer class="oas3_footer">
+<div class="oas3_footer-inner">
+  <div>
+    <h4>Esplanada Móveis</h4>
+    <p>Rede varejista de móveis e eletrodomésticos com lojas físicas no interior de São Paulo. Dormitórios, sofás, mesas, racks, colchões e muito mais para o seu lar.</p>
+  </div>
+  <div>
+    <h4>Links</h4>
+    <p><a href="#produtos">Produtos</a></p>
+    <p><a href="#como-funciona">Como Comprar</a></p>
+    <p><a href="#sobre">Sobre</a></p>
+    <p><a href="#contato">Contato</a></p>
+    <p><a href="#" onclick="document.getElementById('modal-privacidade').classList.add('active');return false">Política de Privacidade</a></p>
+    <p><a href="#" onclick="document.getElementById('modal-termos').classList.add('active');return false">Termos de Uso</a></p>
+  </div>
+  <div>
+    <h4>Contato</h4>
+    <p>Telefone: (11) 4588-6893</p>
+    <p>E-mail: quinterojovis97@gmail.com</p>
+    <p>Av. Geraldo Azzoni, 35<br>Rio Acima — Jundiaí, SP<br>CEP 13.215-840</p>
+  </div>
+</div>
+<div class="footer-bottom">
+  <p>Móveis Esplanada Ltda — CNPJ: 09.184.779/0001-17</p>
+  <p>Av. Geraldo Azzoni, 35, Rio Acima, Jundiaí, SP — CEP 13.215-840</p>
+  <p>© 2026 Esplanada Móveis — Todos os direitos reservados</p>
+</div>
+</footer>
+
+<!-- MODAL PRIVACIDADE -->
+<div class="modal-overlay" id="modal-privacidade">
+<div class="oas3_modal">
+<h2>Política de Privacidade</h2>
+<p><strong>Móveis Esplanada Ltda</strong><br>CNPJ: 09.184.779/0001-17<br>Av. Geraldo Azzoni, 35, Rio Acima, Jundiaí, SP — CEP 13.215-840</p>
+
+<p>Esta Política de Privacidade descreve como coletamos, usamos e protegemos as informações pessoais fornecidas por nossos clientes e visitantes, em conformidade com a Lei Geral de Proteção de Dados (LGPD — Lei nº 13.709/2018).</p>
+
+<p><strong>1. Dados coletados</strong></p>
+<p>Coletamos apenas os dados necessários para o processamento de pedidos e atendimento ao cliente: nome, telefone, e-mail, CPF, endereço de entrega e dados de pagamento. Esses dados são fornecidos voluntariamente pelo cliente no momento da compra ou contato.</p>
+
+<p><strong>2. Finalidade do uso</strong></p>
+<p>Os dados coletados são utilizados exclusivamente para: processamento e entrega de pedidos; atendimento ao cliente e suporte pós-venda; emissão de notas fiscais; comunicação sobre status de pedidos; cumprimento de obrigações legais e fiscais.</p>
+
+<p><strong>3. Compartilhamento</strong></p>
+<p>Não compartilhamos, vendemos nem cedemos dados pessoais a terceiros para fins comerciais. Dados podem ser compartilhados apenas com transportadoras diretamente envolvidas na entrega do pedido e operadoras de pagamento para processamento da transação, sempre sob sigilo e nos limites da finalidade contratada.</p>
+
+<p><strong>4. Armazenamento e segurança</strong></p>
+<p>Os dados são armazenados em ambiente seguro, com controle de acesso restrito a colaboradores autorizados. Adotamos medidas técnicas e organizacionais compatíveis com o porte da operação para proteger os dados contra acessos não autorizados, perda ou alteração.</p>
+
+<p><strong>5. Direitos do titular</strong></p>
+<p>O titular dos dados pode, a qualquer momento, solicitar acesso, correção, exclusão ou portabilidade de seus dados pessoais, entrando em contato pelo e-mail quinterojovis97@gmail.com ou pelo telefone (11) 4588-6893.</p>
+
+<p><strong>6. Cookies</strong></p>
+<p>Este site pode utilizar cookies para melhorar a experiência de navegação. Cookies não coletam dados pessoais identificáveis e podem ser desabilitados nas configurações do navegador.</p>
+
+<p><strong>7. Alterações</strong></p>
+<p>Esta política pode ser atualizada periodicamente. Recomendamos a consulta regular desta página para ciência de eventuais alterações.</p>
+
+<p>Última atualização: junho de 2026.</p>
+
+<button class="oas3_modal-close" onclick="this.closest('.modal-overlay').classList.remove('active')">Fechar</button>
+</div>
+</div>
+
+<!-- MODAL TERMOS -->
+<div class="modal-overlay" id="modal-termos">
+<div class="oas3_modal">
+<h2>Termos de Uso</h2>
+<p><strong>Móveis Esplanada Ltda</strong><br>CNPJ: 09.184.779/0001-17<br>Av. Geraldo Azzoni, 35, Rio Acima, Jundiaí, SP — CEP 13.215-840</p>
+
+<p>Ao acessar e utilizar este site, você concorda com os termos e condições descritos abaixo.</p>
+
+<p><strong>1. Sobre a empresa</strong></p>
+<p>Somos uma rede varejista de móveis e eletrodomésticos com sede em Jundiaí, SP, com lojas físicas no interior do estado de São Paulo. Comercializamos dormitórios, salas de estar e jantar, cozinhas, home offices, colchões e eletrodomésticos.</p>
+
+<p><strong>2. Produtos e preços</strong></p>
+<p>Os produtos apresentados neste site estão sujeitos a disponibilidade de estoque. Preços podem ser alterados sem aviso prévio. Fotos são meramente ilustrativas; cores e dimensões podem variar conforme as configurações do monitor.</p>
+
+<p><strong>3. Pagamento</strong></p>
+<p>Aceitamos pagamento via PIX, cartão de crédito, cartão de débito e boleto bancário. Condições de parcelamento informadas no momento da compra.</p>
+
+<p><strong>4. Entrega</strong></p>
+<p>Realizamos entregas em todo o estado de São Paulo. O prazo de entrega é informado na confirmação do pedido e varia conforme a região e disponibilidade do produto. A entrega é realizada até a porta de entrada ou portaria do endereço indicado.</p>
+
+<p><strong>5. Trocas e devoluções</strong></p>
+<p>Em conformidade com o Código de Defesa do Consumidor (Lei nº 8.078/1990), garantimos o direito de arrependimento no prazo de 7 dias corridos a contar do recebimento do produto (art. 49 do CDC). Produtos com defeito de fabricação possuem garantia legal de 90 dias. Solicitações devem ser realizadas pelos nossos canais de atendimento.</p>
+
+<p><strong>6. Propriedade intelectual</strong></p>
+<p>Todo o conteúdo deste site, incluindo textos, imagens e layout, é de propriedade de Móveis Esplanada Ltda, protegido pela legislação brasileira de propriedade intelectual.</p>
+
+<p><strong>7. Foro</strong></p>
+<p>Para dirimir quaisquer controvérsias oriundas destes termos, fica eleito o foro da Comarca de Jundiaí, SP.</p>
+
+<p>Última atualização: junho de 2026.</p>
+
+<button class="oas3_modal-close" onclick="this.closest('.modal-overlay').classList.remove('active')">Fechar</button>
+</div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  var overlays=document.querySelectorAll('.modal-overlay');
+  overlays.forEach(function(o){
+    o.addEventListener('click',function(e){
+      if(e.target===o) o.classList.remove('active');
+    });
+  });
+  var footer=document.querySelector('.footer-bottom');
+  if(footer) footer.style.visibility='visible';
+});
+</script>
+
+<footer style="text-align:center;padding:18px 12px;font-size:11px;color:#aaa;margin-top:35px;border-top:1px solid #f0f0f0"><p>Elevatewellnness — Conteúdo exclusivo e verificado. © 2026 | Todos os direitos reservados. <a href="https://elevatewellnness.online/" style="color:#aaa;text-decoration:none">elevatewellnness.online</a></p></footer>
+</body>
+</html>
+
+<!-- 44d64928e72e4f06f2ba5669 -->
